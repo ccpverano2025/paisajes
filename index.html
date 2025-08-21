@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página Interactiva de Paisajes</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="slideshow">
+    <!-- 📷 Imagen con efecto -->
+    <div class="slide-image"></div>
+
+    <!-- 🎛 Controles -->
+    <div class="controls">
+      <button id="prev">⏮ Anterior</button>
+      <button id="playPause">⏸ Pausar</button>
+      <button id="next">⏭ Siguiente</button>
+      <button id="random">🔀 Aleatorio</button>
+      <button id="fullscreen">⛶ Pantalla completa</button>
+
+      <label for="speed">Velocidad:</label>
+      <input type="range" id="speed" min="1000" max="10000" step="500" value="4000">
+
+      <select id="effect">
+        <option value="fade">Fundido</option>
+        <option value="kenburns">Zoom Ken Burns</option>
+        <option value="pan">Paneo</option>
+      </select>
+    </div>
+
+    <!-- Texto -->
+    <div class="caption"></div>
+
+    <!-- Indicadores -->
+    <div class="indicators"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
